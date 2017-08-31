@@ -59,8 +59,8 @@
                 <a class="loupe" href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
                 </a>
-                <form class="search" action="#" method="post">
-                  <input type="text" name="search-input" placeholder="Что ищем?">
+                <form class="search-form" action="#" method="post">
+                  <input class="input-custom search-field" type="text" name="search-input" placeholder="Что ищем?">
                 </form>
               </div>
             </li>
@@ -119,16 +119,22 @@
   <main class="main-content">
     <div class="container">
       <section class="shares">
-        <div class="stock-1">
-          <h2>Малинка даром!</h2>
-          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <button class="btn">Хочу варенье!</button>
-        </div>
-        <div class="stock-2">
-          <h2>Шоколадки даром!</h2>
-          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <button class="btn">Хочу шоколадки!</button>
-        </div>
+        <ul class="row shares-row">
+          <li>
+            <div class="stock-item">
+            <h2 class="stock-title">Малинка даром!</h2>
+            <p class="stock-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <a class="btn" href="#">Хочу варенье!</a>
+          </div>
+          </li>
+          <li>
+            <div class="stock-item bg-chocolate">
+              <h2 class="stock-title">Шоколадки даром!</h2>
+              <p class="stock-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+              <a class="btn" href="#">Хочу шоколадки!</a>
+            </div>
+          </li>
+        </ul>
       </section>
       <section class="type-icecream">
         <div class="item-icecream">

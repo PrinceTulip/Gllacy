@@ -30,6 +30,24 @@
   padding: 0 5px;
 }
 
+.btn {
+  border-radius: 100px;
+}
+
+.btn:hover {
+  background-image: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background-image: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background-image: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px 0 rgba(172,16,0,0.1);
+}
+
+.btn:active {
+  background-image: -moz-linear-gradient(top, #e74a35 0%, #f26843 100%);
+  background-image: -webkit-linear-gradient(top, #e74a35 0%, #f26843 100%);
+  background-image: linear-gradient(to bottom, #e74a35 0%, #f26843 100%);
+  box-shadow: inset 0 2px 2px 0 rgb(148,39,24);
+}
+
 .navigation-row {
   display: flex;
   justify-content: space-between;
@@ -67,8 +85,54 @@
   display: none;
 }
 
-.search {
+.search-form {
   display: none;
+  position: absolute;
+  right: 446px;
+  top: 67px;
+  padding: 15px 17.5px;
+  background-color: #f8f7f4;
+  border-radius: 3px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.input-custom {
+  padding: 10px 0 9px 11px;
+  width: 309px;
+  color: #323232;
+  font-size: 14px;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+ }
+
+ input[placeholder]          {text-overflow:ellipsis;}
+ input::-moz-placeholder     {text-overflow:ellipsis;}
+ input:-moz-placeholder      {text-overflow:ellipsis;}
+ input:-ms-input-placeholder {text-overflow:ellipsis;}
+
+::-webkit-input-placeholder {
+  color:#999999;
+}
+::-moz-placeholder          {
+  color:#999999;
+}
+:-moz-placeholder           {
+  color:#999999;
+}
+:-ms-input-placeholder      {
+  color:#999999;
+}
+
+.input-custom:hover {
+  border-color: #e6e5e3;
+ }
+
+.input-custom:focus {
+  border-color: #cfe1f3;
+}
+
+.header-search:hover .search-form {
+  display: block;
 }
 
 .menu-link {
@@ -249,6 +313,7 @@
   padding-top: 276px;
   text-align: center;
   color: #fff;
+  margin-bottom: 38px;
 }
 
 .slider-title {
@@ -273,6 +338,19 @@
   text-decoration: none;
   padding: 12px 50px;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+.slide-link:hover {
+  background-image: -webkit-linear-gradient(top, #e74a35 0%, #f26843 100%);
+  background-image: -moz-linear-gradient(top, #ed705e 0%, #f26843 100%);
+  background-image: linear-gradient(to bottom, #ed705e 0%, #f26843 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+.slide-link:active {
+  box-shadow: inset 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+
 }
 
 body > input[type=radio] {
@@ -329,10 +407,68 @@ body > input[type=radio] {
   background-position: top center;
 }
 
+.shares {
+  margin-bottom: 40px;
+}
 
+.stock-item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  width: 560px;
+  border-radius: 15px;
+  background: url("../images/rusbery-background.jpg") no-repeat;
+}
 
+.bg-chocolate {
+  background: url("../images/chocolate-background.jpg") no-repeat;
+}
 
+.stock-title {
+  margin: 0;
+  font-size: 35px;
+  font-weight: bold;
+}
 
+.stock-text {
+  font-weight: 500;
+  font-size: 18px;
+  padding-top: 27px;
+  padding-bottom: 49px;
+  margin: 0;
+}
+
+.shares-row {
+  justify-content: space-between;
+}
+
+.stock-item .btn {
+  display: inline-block;
+  align-self: flex-end;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  background-image: -moz-linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(85, 8, 0, 0.54);
+  padding: 12px 23px;
+}
+
+.stock-item .btn:hover {
+  background-image: -webkit-linear-gradient(top, #e74a35 0%, #f26843 100%);
+  background-image: -moz-linear-gradient(top, #ed705e 0%, #f26843 100%);
+  background-image: linear-gradient(to bottom, #ed705e 0%, #f26843 100%);
+  box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+}
+
+.stock-item .btn:active {
+   background-image: -moz-linear-gradient(top, #e74a35 0%, #f26843 100%);
+   background-image: -webkit-linear-gradient(top, #e74a35 0%, #f26843 100%);
+   background-image: linear-gradient(to bottom, #e74a35 0%, #f26843 100%);
+   box-shadow: inset 0 2px 2px 0 rgb(148,39,24);
+}
 
 
 
