@@ -44,10 +44,10 @@
                 </ul>
               </li>
               <li>
-                <a class="menu-link" href="#">Доставка и Оплата</a>
+                <a class="menu-link" href="#">Доставка и оплата</a>
               </li>
               <li>
-                <a class="menu-link" href="#">О компании</a>
+                <a class="menu-link" href="#">О Компании</a>
               </li>
             </ul>
           </nav>
@@ -69,11 +69,21 @@
                 <a class="icon-login" href="#"><svg class="svg-icon-login" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#000"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
                   Вход</a>
                 <form class="user-form" action="#" method="post">
-                  <input type="text" name="mail" placeholder="Электроная почта?">
-                  <input type="text" name="password" placeholder="Пароль">
-                  <button class="btn">Войти</button>
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация?</a>
+                  <input class="input-custom login-field" type="text" name="mail" placeholder="Электроная почта">
+                  <input class="input-custom login-field" type="text" name="password" placeholder="Пароль">
+                  <ul class="row user-form-row">
+                    <li>
+                      <input class="btn" type="submit" value="Войти">
+                    </li>
+                    <li>
+                      <p class="login-text">
+                        <a class="lost-password" href="#">Забыли пароль?</a>
+                      </p>
+                      <p class="login-text">
+                        <a class="lost-password" href="#">Новая регистрация?</a>
+                      </p>
+                    </li>
+                  </ul>
                 </form>
               </div>
             </li>
@@ -83,16 +93,20 @@
           </ul>
         </li>
         <li>
-          <ul class="row">
-            <li class="ml-auto">
-              <div class="info-block">
-                <p class="time-work">C 10 до 20, ежедневно</p>
-                <p class="phone-number">8 812 450-25-25</p>
-              </div>
-            </li>
-          </ul>
         </li>
       </ul>
+      <ul class="row">
+        <li class="ml-auto">
+          <div class="info-block">
+            <p class="time-work">C 10 до 20, ежедневно</p>
+            <p class="phone-number">8 812 450-25-25</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="main-content">
+    <div class="container">
       <section class="slider">
         <div class="container">
           <div id="slide-1" class=slide>
@@ -114,10 +128,6 @@
           </div>
         </div>
       </section>
-    </div>
-  </header>
-  <main class="main-content">
-    <div class="container">
       <section class="shares">
         <ul class="row shares-row">
           <li>
