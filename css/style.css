@@ -1258,6 +1258,7 @@ body > input[type=radio] {
 
 .popup-text-area {
   position: relative;
+  margin-bottom: 25px;
 }
 
 .text-letter {
@@ -1289,6 +1290,16 @@ body > input[type=radio] {
   margin-bottom: 20px;
 }
 
+.block-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-submit {
+  align-self: flex-end;
+  outline: none;
+  padding: 10px 25px;
+}
 
 
 
