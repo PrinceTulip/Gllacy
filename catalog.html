@@ -1,10 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
   <title>Gllacy Catalog</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<div class="site-wrapper">
+  <header class="main-header">
+    <div class="container">
+      <ul class="row navigation-row">
+        <li>
+          <div class="header-logo">
+            <img src="images/logo.svg" alt="logo">
+          </div>
+        </li>
+        <li>
+          <nav class="main-navigation">
+            <ul class="menu">
+              <li class="active">
+                <a class="menu-link active-catalog" href="http://localhost:63342/Gllacy/index.html?_ijt=396mt6tmhcg5fe2mo6jqf7cb9l">Каталог</a>
+                <ul class="drop-down">
+                  <li class="new">
+                    <span>Новинки</span>
+                  </li>
+                  <li>
+                    <a href="#">Сливочное</a>
+                  </li>
+                  <li>
+                    <a class="on-page" href="#">Щербеты</a>
+                  </li>
+                  <li>
+                    <a href="#">Фруктовый лед</a>
+                  </li>
+                  <li>
+                    <a href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="menu-link" href="#">Доставка и оплата</a>
+              </li>
+              <li>
+                <a class="menu-link" href="#">О Компании</a>
+              </li>
+            </ul>
+          </nav>
+        </li>
+        <li class="user-left">
+          <ul class="row user-row">
+            <li>
+              <div class="header-search">
+                <a class="loupe" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+                </a>
+                <form class="search-form" action="#" method="post">
+                  <input class="input-custom search-field" type="text" name="search-input">
+                  <span class="text-transition">Что ищем?</span>
+                </form>
+              </div>
+            </li>
+            <li>
+              <div class="user-block">
+                <a class="icon-login" href="#"><svg class="svg-icon-login" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#000"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+                  Вход</a>
+                <form class="user-form" action="#" method="post">
+                  <div class="input-block-email">
+                    <input class="input-custom login-field" type="text" name="mail">
+                    <span class="text-transition second">Электроная почта</span>
+                  </div>
+                  <div class="input-block-password">
+                    <input class="input-custom login-field" type="text" name="password">
+                    <span class="text-transition third">Пароль</span>
+                  </div>
+                  <ul class="row user-form-row">
+                    <li>
+                      <input class="btn" type="submit" value="Войти">
+                    </li>
+                    <li>
+                      <p class="login-text">
+                        <a class="lost-password" href="#">Забыли пароль?</a>
+                      </p>
+                      <p class="login-text">
+                        <a class="lost-password" href="#">Новая регистрация?</a>
+                      </p>
+                    </li>
+                  </ul>
+                </form>
+              </div>
+            </li>
+            <li>
+                <a class="basket basket-active" href="#"><svg class="svg-icon-basket" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>2 товара</a>
+              <table class="table-basket">
+                <tr>
+                  <td>
+                    <a class="basket-delete" title="Убрать" href="#">Убрать</a>
+                  </td>
+                  <td>
+                    <img class="icecream-icon1" src="images/icecream-small1.png" alt="icecream-img">
+                  </td>
+                  <td>
+                    <div class="desc-icecream ice-1">Пломбир с апелсиновым джемом</div>
+                  </td>
+                  <td>
+                    <div class="basket-kg">1,5 кг <span>x 200 руб.</span></div>
+                  </td>
+                  <td>
+                    <div class="basket-price">300 руб.</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a class="basket-delete" title="Убрать" href="#">Убрать</a>
+                  </td>
+                  <td>
+                    <img class="icecream-icon2" src="images/icecream-small2.png" alt="icecream-svg">
+                  </td>
+                  <td>
+                    <div class="desc-icecream ice-2">Клубничный пломбир с присыпкой<br> из белого шоколада</div>
+                  </td>
+                  <td>
+                    <div class="basket-kg">1,5 кг <span>x 300 руб.</span></div>
+                  </td>
+                  <td>
+                    <div class="basket-price"> 450 руб.</div>
+                  </td>
+                </tr>
+                    <tr>
+                      <td class="colspan" colspan="5">
+                        <div class="total-price">Итого: 750 руб.</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="colspan" colspan="5">
+                        <div class="offer">
+                          <a class="btn basket-btn" href="#">Оформить заказ</a>
+                        </div>
+                      </td>
+                    </tr>
+              </table>
+            </li>
+          </ul>
+        </li>
+        <li>
+        </li>
+      </ul>
+      <ul class="row">
+        <li class="ml-auto">
+          <div class="info-block">
+            <p class="time-work">C 10 до 20, ежедневно</p>
+            <p class="phone-number">8 812 450-25-25</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="main-content">
+    <div class="container">
+      <ul class="breadcrumbs">
+        <li class="breadcumbs-link">
+          <a class="general" href="http://localhost:63342/Gllacy/index.html?_ijt=396mt6tmhcg5fe2mo6jqf7cb9l">Главная</a>
+        </li>
+        <li class="breadcumbs-link">
+          <a class="catalog" href="#">Каталог</a>
+        </li>
+        <li class="breadcumbs-link">
+          <a class="ice-cream" href="#">Сливочное</a>
+        </li>
+      </ul>
+      <section class="catalog-filter">
+      <div class="main-title">
+        Сливочное мороженое
+      </div>
+        <ul class="row row-filter">
+          <li>
+            <div class="filter-item">
+              <div class="filter-title">Сортировка:</div>
+              <div class="filter-shadow">
+                <form class="filter-form" action="#" method="post">
+                  <select size="1" class="custom-select" name="#">
+                      <option value="popular">по популярности</option>
+                      <option value="cheap">сначала недорогие</option>
+                      <option value="expensive">сначала дорогие</option>
+                      <option value="fat">по жирности</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+</div>
 </body>
 </html>
