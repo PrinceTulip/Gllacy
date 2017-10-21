@@ -1,0 +1,179 @@
+
+                                                                                            ol, ul {list-style: none;}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.slider-small {
+  width: 220px;
+  margin: 0 auto;
+}
+
+/* Ширина, высота и позиционирование для ползунков
+----------------------------------*/
+.slider-small .ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  -ms-touch-action: none;
+  touch-action: none;
+  cursor:pointer;
+  border: 0;
+  border-radius: 50%;
+}
+
+.slider-small .ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+}
+
+/* support: IE8 - See #6727 */
+.slider-small .ui-slider.ui-state-disabled .ui-slider-handle,
+.slider-small .ui-slider.ui-state-disabled .ui-slider-range {
+  filter: inherit;
+}
+
+/* Высота горизонтальной полоски
+----------------------------------*/
+.slider-small .ui-slider-horizontal {height: 2px;}
+.slider-small .ui-slider-horizontal .ui-slider-handle {
+  top: -.5em;
+  margin-left: -.6em;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.ui-slider-horizontal .ui-slider-range {top: 0;}
+.ui-slider-horizontal .ui-slider-range-min {left: 0;}
+.ui-slider-horizontal .ui-slider-range-max{right: 0;  }
+
+/* Ширина вертикальной полоски
+----------------------------------*/
+
+.slider-small .ui-slider-vertical .ui-slider-handle {
+  left: -.3em;
+  margin-left: 0;
+  margin-bottom: -.6em;
+}
+.slider-small .ui-slider-vertical .ui-slider-range {left: 0;width: 105%;}
+.ui-slider-vertical .ui-slider-range-min {bottom: 0;}
+.ui-slider-vertical .ui-slider-range-max {top: 0;}
+
+/* Указание шрифта и размера текста
+----------------------------------*/
+.ui-widget {
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 1.1em;
+}
+.ui-widget .ui-widget {
+  font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 1em;
+}
+
+/* Стилизация полоски
+----------------------------------*/
+.slider-small .ui-widget-content {
+  position: relative;
+  height: 2px;
+  top: 40px;
+  left: 24px;
+  width: 179px;
+  border-radius: 0;
+  background: #d1d9d2;
+  border: 0;
+}
+
+/* Стилизация промижудка между ползунками
+----------------------------------*/
+.slider-small .ui-widget-header {
+  background: #f8f7f4;
+  font-weight: bold;
+}
+
+/* Стилизация ползунков
+----------------------------------*/
+.slider-small .ui-state-default,
+.slider-small .ui-widget-content .ui-state-default,
+.slider-small .ui-widget-header .ui-state-default {
+  font-weight: normal;
+  background: #fafafa; /* Old browsers */
+  background: -moz-linear-gradient(top,  #fafafa 0%, #f2f0f1 39%, #e8e8e8 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafafa), color-stop(39%,#f2f0f1), color-stop(100%,#e8e8e8)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #fafafa 0%,#f2f0f1 39%,#e8e8e8 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #fafafa 0%,#f2f0f1 39%,#e8e8e8 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #fafafa 0%,#f2f0f1 39%,#e8e8e8 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #fafafa 0%,#f2f0f1 39%,#e8e8e8 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
+
+  -webkit-box-shadow: 0 1px 0 #ccc, inset 0 1px 0 #fff;
+  -moz-box-shadow: 0 1px 0 #ccc, inset 0 1px 0 #fff;
+  -ms-box-shadow: 0 1px 0 #ccc, inset 0 1px 0 #fff;
+  -o-box-shadow: 0 1px 0 #ccc, inset 0 1px 0 #fff;
+  box-shadow: 0 1px 0 #ccc, inset 0 1px 0 #fff;
+}
+.slider-small .ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+  text-decoration: none;
+}
+
+/* Стилизация ползунка при наведении и фокусе
+----------------------------------*/
+
+.slider-small .ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+  font-weight: normal;
+}
+
+.slider-small .ui-widget.ui-widget-content {
+  border: none;
+  height: 4px;
+  width: 188px;
+  left: 12px;
+  top: 20px;
+}
+
+.slider-small .ui-state-active,
+.slider-small .ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  border: 0;
+  font-weight: normal;
+}
+
+.slider-small .ui-icon-background,
+.slider-small .ui-state-active .ui-icon-background {
+  border: 0;
+}
+
+.slider-small span.ui-slider-handle.ui-corner-all.ui-state-default {
+  background: #ffffff;
+}
+
+
+
+
+
+
